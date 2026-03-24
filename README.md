@@ -6,19 +6,20 @@ _Distributed Instruction-Based State Machine for Agentic and Analytic Computable
 
 ---
 
-**Alethic-ISM** is a distributed framework for executing structured computation graphs at scale — where the reasoning process itself is the artifact, not just its output.
+AI systems produce conclusions — clinical recommendations, financial assessments, ethical judgments — but almost none can explain *how* they arrived there. The intermediate reasoning, the data transformations, the model choices, the alternatives considered — all of it evaporates the moment execution completes. You get an answer, but not the process that produced it. If you can't reconstruct how a conclusion was reached, you can't trust it, regulate it, or improve it.
 
-Workflow tools like Airflow, n8n, and LangChain coordinate external services. Data passes through but isn't owned, versioned, or lineage-tracked. The graph is plumbing.
+**Alethic-ISM** exists to make the reasoning process itself a permanent, inspectable, verifiable artifact. It is a distributed computation engine where every step — every LLM call, every code execution, every data transformation — produces immutable, versioned state with structural provenance. Nothing is overwritten. Nothing is lost. The graph doesn't orchestrate computation; it *is* the computation, and the complete record of that computation survives execution.
 
-Alethic-ISM inverts this. The graph *is* the computation. Every instruction node — LLM prompt, code, data transform, template — takes an immutable, versioned input state and produces a new output state. What went in, what was applied, by whom, and what came out is captured structurally. States propagate in real-time via pub-sub, with tiered storage, horizontal scaling, and dynamic workload routing — built for production throughput, not batch scheduling.
+This runs at scale — real-time pub-sub propagation, tiered storage, horizontal scaling, dynamic workload routing — built for production throughput, not batch scheduling or toy projects running locally on a laptop.
 
-**State provenance is the architecture, not a feature.** Every output carries full lineage by design. Everything else follows:
+**State provenance is the architecture, not a feature.** States are append-only and lineage is embedded in the data itself — not a separate audit system. The data *is* the audit trail. Everything else follows:
 
 - **Reproduce any result** — know exactly how every output was produced, by what, and from what inputs
 - **Train models from reasoning** — distill complex multi-step graphs into efficient single-call models, with full provenance for what the model learned and why
 - **Evaluate systematically** — compare models, prompts, and parameters at scale by cross-joining scenarios against configurations
 - **Scale without redesign** — run the same graphs across distributed infrastructure, from local development to production clusters
 - **Inspect and understand** — the graph is the program. Open it, read it, see the reasoning structure without touching code
+- **Meet regulatory requirements** — EU AI Act, FDA AI/ML guidelines, and FINRA model governance all demand provenance that this architecture generates as a byproduct of execution
 
 Developed in the context of bioethics research at the University of Oxford and the National University of Singapore, with previous support from Princeton University. Used across research initiatives including work with UC Berkeley on synthetic contingent valuation (*"Using LLMs to Estimate Willingness to Pay: Bridging the Data Availability Gap with Synthetic Contingent Valuation"*). The architecture reflects its origin: provenance is non-negotiable, reasoning is decomposable, and conclusions don't exist without their justification.
 
@@ -41,16 +42,16 @@ Developed in the context of bioethics research at the University of Oxford and t
 ```
   NODES                           EDGES                          STATES
   +--------------------------+   +--------------------------+   +--------------------------+
-  | Instruction + Processor  |   | Programmable per-edge    |   | Immutable & versioned    |
+  | Instruction + Processor  |   | Programmable per-edge    |   | Append-only, versioned   |
   |                          |   |                          |   |                          |
-  | - LLM prompt             |   | - Programmable functions |   | - Computation outputs    |
-  | - Code (Python, Lua...)  |   |   on input and output    |   | - Interactive (HITL)     |
-  | - Template rendering     |   | - Can drop, pass, retry, |   | - Memory-backed (RAG)    |
-  | - API / A2A / MCP call   |   |   transform, or branch   |   | - Data sources (S3,      |
-  | - Web search             |   | - Repeat inputs          |   |   files, images, Excel)  |
-  | - Memory / data query    |   | - Concurrency modes      |   | - Cross-state queryable  |
-  | - Script, webhook...     |   |   (expression-based)     |   | - Full lineage tracked   |
-  |                          |   | - Debug triggers on      |   |                          |
+  | - LLM prompt             |   | - Programmable functions |   | - Content-addressed rows |
+  | - Code (Python, Lua...)  |   |   on input and output    |   |   (SHA-256 hashed)       |
+  | - Template rendering     |   | - Can drop, pass, retry, |   | - Computation outputs    |
+  | - API / A2A / MCP call   |   |   transform, or branch   |   | - Interactive (HITL)     |
+  | - Web search             |   | - Repeat inputs          |   | - Memory-backed (RAG)    |
+  | - Memory / data query    |   | - Concurrency modes      |   | - Data sources (S3,      |
+  | - Script, webhook...     |   |   (expression-based)     |   |   files, images, Excel)  |
+  |                          |   | - Debug triggers on      |   | - Queryable lineage      |
   |                          |   |   data expressions       |   |                          |
   +--------------------------+   +--------------------------+   +--------------------------+
 
@@ -237,7 +238,7 @@ The routing and persistence layers are abstracted through interfaces. Implement 
 ### Web Application
 
 - **[alethic-ism-ui](https://github.com/quantumwake/alethic-ism-ui.git) (React / TypeScript):**
-  Alethic Studio — the visual workbench for designing, executing, monitoring, and analyzing instruction graphs. Built on React 18 with ReactFlow for graph rendering and Zustand for state management.
+  Alethic Studio — visual workbench for designing, executing, monitoring, and analyzing instruction graphs. Includes an AI assistant with 45+ tools that can build entire pipelines through natural language, with phased execution and context compression for efficient multi-step workflows.
 
 - **[alethic-ism-actions-ui](https://github.com/quantumwake/alethic-ism-actions.git):**
   *(Pending public release)* Web interface for real-time user interaction outside the graph (e.g., reinforcement learning, human-in-the-loop review).
@@ -245,7 +246,7 @@ The routing and persistence layers are abstracted through interfaces. Implement 
 ### Standalone Packages
 
 - **[@quantumwake/kgraph](https://github.com/quantumwake/kgraph) (npm):**
-  Standalone canvas-based graph rendering library extracted from Alethic Studio. Pure React, zero external dependencies.
+  Standalone canvas-based graph rendering library extracted from Alethic Studio. Pure React, zero external dependencies. ~15KB gzipped.
 
 - **[@quantumwake/react-assistant](https://github.com/quantumwake/react-assistant) (npm):**
   Generic AI assistant engine with context provider pattern, extracted from Alethic Studio.
