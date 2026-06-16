@@ -6,7 +6,7 @@ _Distributed Instruction-Based State Machine for Agentic and Analytic Computable
 
 To date, Alethic ISM has processed **over 500 million data points** — primarily across academic domains, with a handful of commercial applications now in trial — comfortably handling sparse data across hundreds of columns and millions of rows per state.
 
-![Alethic ISM Studio](ism-studio-v10.png)
+![Alethic ISM Studio](docs/images/ism-studio-v10.png)
 
 ---
 
@@ -57,7 +57,7 @@ Measures the **degree of consideration** language models extend to animals acros
 
 That the same set of primitives expresses normative reasoning, behavioral economics, clinical decision-making, and animal ethics equally well indicates that the primitives — rather than any individual application — constitute the system's contribution.
 
-![Alethic ISM Studio](ism-sacre1.png)
+![Alethic ISM Studio](docs/images/ism-sacre1.png)
 > **A note on this repository.** This open-source repository tracks a stable baseline of the system. Active development currently takes place in a closed-source line that has moved substantially ahead, with significantly more capability across the state-storage, publishing, and Studio tiers. Selected features are upstreamed over time, and further components may be opened in the future. For research, academic, or commercial use — including access to capabilities that run ahead of this baseline — please [reach out](#contact).
 
 ---
@@ -75,7 +75,7 @@ As with any model of computation — the relational model, the actor model, or t
 
 Because the program, its data, and its record are the same object, the entire lifecycle lives in one place. The same graph can be built and run, its results transformed and analyzed, then refined and run again — looped as many times as the work demands — and finally published as an interactive dataset, without ever leaving the system and with the whole process distributed across the cluster. Authoring, execution, analysis, and publishing are not separate tools stitched together; they are one continuous loop over a single substrate.
 
-![Alethic ISM Studio](ism-studio-v9.png)
+![Alethic ISM Studio](docs/images/ism-studio-v9.png)
 
 ---
 
@@ -88,8 +88,8 @@ This is how we surface the outputs of our scientific, social, and ethics researc
 <div align="center">
   <table>
     <tr>
-      <td align="center"><a href="data_visualizer1.png"><img src="data_visualizer1.png" width="420"/></a></td>
-      <td align="center"><a href="data_visualizer2.png"><img src="data_visualizer2.png" width="420"/></a></td>
+      <td align="center"><a href="docs/images/data_visualizer1.png"><img src="docs/images/data_visualizer1.png" width="420"/></a></td>
+      <td align="center"><a href="docs/images/data_visualizer2.png"><img src="docs/images/data_visualizer2.png" width="420"/></a></td>
     </tr>
   </table>
 </div>
@@ -212,7 +212,7 @@ If you're using **Alethic-ISM** in research or applied contexts, let us know —
 
 ## License
 
-Alethic ISM is under a DUAL licensing model, please refer to [LICENSE.md](LICENSE.md).
+Alethic ISM is under a DUAL licensing model, please refer to [LICENSE.md](docs/LICENSE.md).
 
 **AGPL v3**
   Intended for academic, research, and nonprofit institutional use. As long as all derivative works are also open-sourced under the same license, you are free to use, modify, and distribute the software.

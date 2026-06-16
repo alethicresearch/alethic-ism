@@ -1,1 +1,0 @@
-{{- define "application.stream.api.fullname" -}}{{ printf "%s-%s" .Release.Name .Chart.Name | trunc 63 | trimSuffix "-" }}{{- end -}}
