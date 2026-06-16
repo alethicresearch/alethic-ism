@@ -1,0 +1,16 @@
+.claude
+.idea
+.venv
+.env
+.firebase-credentials.json
+.api-key
+charts
+
+# Secrets directory - ignore all actual secrets but allow README and .sample files
+secrets/*.api-key
+!secrets/*.api-key.sample
+secrets/*-key.json
+!secrets/*.json.sample
+secrets/*.credentials.json
+secrets/firebase-credentials.json
+!secrets/firebase-credentials.json.sample

@@ -1,0 +1,100 @@
+apiVersion: v2
+name: alethic-helm
+description: A Helm chart for deploying all alethic-ism modules
+type: application
+version: 0.1.0
+appVersion: "1.0"
+#icon: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+dependencies:
+  - name: nats
+    version: "1.3.2"  # Use the version you need
+    repository: "https://nats-io.github.io/k8s/helm/charts/"
+    condition: nats.enabled
+    alias: nats
+
+  - name: nack
+    version: "0.28.0"         # Replace with the correct version as needed
+    repository: "https://nats-io.github.io/k8s/helm/charts/"
+    condition: nack.enabled   # Similarly, control installation via values
+
+  - name: alethic-ism-api
+    version: 0.1.0
+    repository: "file://alethic-ism-api"
+    condition: alethic-ism-api.enabled
+
+  - name: alethic-ism-ui
+    version: 0.1.0
+    repository: "file://alethic-ism-ui"
+    condition: alethic-ism-ui.enabled
+
+  - name: alethic-ism-monitor
+    version: 0.1.0
+    repository: "file://alethic-ism-monitor"
+    condition: alethic-ism-monitor.enabled
+
+  - name: alethic-ism-state-router
+    version: 0.1.0
+    repository: "file://alethic-ism-state-router"
+    condition: alethic-ism-state-router.enabled
+
+  - name: alethic-ism-usage
+    version: 0.1.0
+    repository: "file://alethic-ism-usage"
+    condition: alethic-ism-usage.enabled
+
+  - name: alethic-ism-state-sync-store
+    version: 0.1.0
+    repository: "file://alethic-ism-state-sync-store"
+    condition: alethic-ism-state-sync-store.enabled
+
+  - name: alethic-ism-processor-openai
+    version: 0.1.0
+    repository: "file://alethic-ism-processor-openai"
+    condition: alethic-ism-processor-openai.enabled
+
+  - name: alethic-ism-processor-anthropic
+    version: 0.1.0
+    repository: "file://alethic-ism-processor-anthropic"
+    condition: alethic-ism-processor-anthropic.enabled
+
+  - name: alethic-ism-processor-openrouter
+    version: 0.1.0
+    repository: "file://alethic-ism-processor-openrouter"
+    condition: alethic-ism-processor-openrouter.enabled
+
+  - name: alethic-ism-processor-gemini
+    version: 0.1.0
+    repository: "file://processor-gemini"
+    condition: alethic-ism-processor-gemini.enabled
+
+  - name: alethic-ism-processor-python
+    version: 0.1.0
+    repository: "file://processor-python"
+    condition: alethic-ism-processor-python.enabled
+
+  - name: alethic-ism-processor-mako
+    version: 0.1.0
+    repository: "file://processor-mako"
+    condition: alethic-ism-processor-mako.enabled
+
+  - name: alethic-ism-stream-api
+    version: 0.1.0
+    repository: "file://stream-api"
+    condition: alethic-ism-stream-api.enabled
+
+  - name: alethic-ism-query-api
+    version: 0.1.0
+    repository: "file://query-api"
+    condition: alethic-ism-query-api.enabled
+
+  - name: alethic-ism-state-online-join
+    version: 0.1.0
+    repository: "file://state-online-join"
+    condition: alethic-ism-state-online-join.enabled
+
+  - name: alethic-ism-state-online-merge
+    version: 0.1.0
+    repository: "file://state-online-merge"
+    condition: alethic-ism-state-online-merge.enabled
+
+
