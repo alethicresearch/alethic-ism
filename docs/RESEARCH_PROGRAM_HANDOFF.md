@@ -41,8 +41,8 @@ Synthetic contingent valuation / willingness-to-pay work is important independen
 
 The P2 maximal-master and submission-composition stages are complete. Current P2 artifacts are:
 
-- **P2 v49 main** — https://docs.google.com/document/d/1HpMtZSNbrLr_g37pypSQ5thHmnhZVQah/edit
-- **P2 v49 Supplementary Information** — https://docs.google.com/document/d/16uDrozERPVusO0GcQj2Qj9q5HF_lw38y/edit
+- **P2 v49 main** — https://docs.google.com/document/d/1NF6xZmdr59Thm2KihImGyVmbdX7bxyCl/edit
+- **P2 v49 Supplementary Information** — https://docs.google.com/document/d/1DcFnJ4Prv6J0GBrn95KfTkgyNxDwPkcc/edit
 - **P2 v48 preserved maximal authorial master** — https://docs.google.com/document/d/12W2-SHZ1CSdbTfQWO1i0nXcCViVR_AiI/edit
 
 P2 now uses Alethic-ISM in the bounded role intended by the program: construction history, evidence that executable building can generate philosophical pressure, selected technical depth, independent cross-workflow context, and a possible auditable/scalable architecture. It does not present current REai or Bioethics Bench as requiring ISM.
