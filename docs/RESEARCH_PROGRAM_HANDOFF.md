@@ -9,7 +9,7 @@ For cross-program current state, first read:
 
 ## Where Alethic-ISM sits
 
-Part I, *Doing Ethics with AI: Practical Ethics Engineering, Product-Led Philosophy, & Computer-Aided Ethics* (Ghose, Rasaee, Singer, & Savulescu, 2026a), introduces **Doing Ethics with AI (DEWA)** as a general paradigm in which normative procedures can be specified, constructed as computational systems, investigated, validated, and ultimately studied in use.
+Part I, *Doing Ethics with AI: Practical Ethics Engineering, Product-Led Philosophy, & Computer-Aided Ethics* (Ghose, Singer, & Savulescu, 2026a), introduces **Doing Ethics with AI (DEWA)** as a general paradigm in which normative procedures can be specified, constructed as computational systems, investigated, validated, and ultimately studied in use.
 
 Alethic-ISM intersects with DEWA because it was used in early computational investigations that helped make normative workflows executable and inspectable. Its scientific identity is broader: **a domain-neutral instruction-state-machine infrastructure for auditable AI research workflows**.
 
@@ -39,9 +39,15 @@ Synthetic contingent valuation / willingness-to-pay work is important independen
 
 ## Current program state
 
-The high-level DEWA editorial/formatting pass is complete enough to return to the principal substantive task: **P2 maximal integrated master**, built from current P2 v47 before submission compression.
+The P2 maximal-master and submission-composition stages are complete. Current P2 artifacts are:
 
-Current high-level Drive documents include Program Overview v3 and Publication Program v18. The current Alethic-ISM research/publication plan is **v3**:
+- **P2 v49 main** — https://docs.google.com/document/d/1HpMtZSNbrLr_g37pypSQ5thHmnhZVQah/edit
+- **P2 v49 Supplementary Information** — https://docs.google.com/document/d/16uDrozERPVusO0GcQj2Qj9q5HF_lw38y/edit
+- **P2 v48 preserved maximal authorial master** — https://docs.google.com/document/d/12W2-SHZ1CSdbTfQWO1i0nXcCViVR_AiI/edit
+
+P2 now uses Alethic-ISM in the bounded role intended by the program: construction history, evidence that executable building can generate philosophical pressure, selected technical depth, independent cross-workflow context, and a possible auditable/scalable architecture. It does not present current REai or Bioethics Bench as requiring ISM.
+
+The current Alethic-ISM research/publication plan remains **v3**:
 
 https://docs.google.com/document/d/1ghrO0Ngk0nWiZylpQmZD0yoyORiJ51DJ/edit
 
@@ -49,62 +55,26 @@ Overall DEWA Drive root:
 
 https://drive.google.com/drive/folders/1cYrCfxRhIwsO5Uo-5nIAxJUPTL5Z0cDe
 
-## What P2 should use Alethic-ISM to show
+## What P2 now preserves
 
-P2 should use Alethic-ISM for three bounded but substantive purposes.
+The composed P2 submission set keeps four especially important ISM contributions:
 
-### 1. Construction history as philosophical evidence
+1. **construction history as philosophical evidence** — early executable normative graphs exposed the mismatch between `Policy Strength` and reflective-equilibrium coherence;
+2. **general technical capability** — explicit instruction/state structure, persistence, provenance/replay, model/configuration control, and graph-based execution;
+3. **independent cross-workflow evidence** — synthetic contingent valuation/WTP demonstrates use outside SACRE/DEWA;
+4. **possible scale architecture** — later SACRE/ISM material is framed as historical/prototype/scaling architecture rather than a required present backend.
 
-Early normative-computation graphs help document the product-led-philosophy claim that construction exposes conceptual incompleteness. Making a verbal or diagrammatic procedure executable forces decisions about inputs, state, ordering, boundaries, persistence, iteration, and outputs. Those construction pressures contributed to the specification work that became SACRE.
+Deeper architecture and application detail is routed to the P2 supplement and, more importantly, to the standalone systems-paper track.
 
-The historical figures therefore matter when they show how building changed the philosophical object, not merely because they prove that software existed.
-
-### 2. General technical capability
-
-Alethic-ISM demonstrates technical infrastructure deeper than a prompt wrapped in an interface. Relevant capabilities include:
-
-- explicit instruction/state abstraction;
-- immutable/persistent state;
-- graph-structured execution history;
-- provenance and replay/reconstruction;
-- controlled model/configuration variation;
-- branching/comparison of workflows;
-- publication/sharing of research states;
-- distributed execution and larger-scale research workflows.
-
-P2 should use only the capabilities needed to make its construction argument. The standalone systems paper owns the deeper architecture and evaluation.
-
-### 3. A possible scaling architecture for normative computation
-
-The instruction-state-machine abstraction provides a plausible architecture for highly traceable normative computation at larger scale. Earlier SACRE/ISM modes or integration paths may be described as developed/prototyped where supported.
-
-Do not upgrade historical/prototype integration into a claim that current REai or Bioethics Bench production execution requires ISM.
-
-## Immediate P2 evidence/figure inventory
-
-The maximal P2 master should review the June 15 / earlier DEWA-ISM materials and current repo state, then select approximately four high-value figures if they genuinely advance the argument:
-
-1. an instruction/state-machine graph or Studio view that makes the abstraction legible;
-2. a WTP/synthetic-data graph or multi-model execution view demonstrating cross-domain use/scale;
-3. an early collective-reflective-equilibrium/SACRE precursor graph showing construction feeding back into theory;
-4. a later SACRE execution architecture in ISM, explicitly labeled as a scalable/auditable architecture or prototype rather than the mandatory current REai backend.
-
-Detailed processor, template, publishing, deployment, and operational diagrams usually belong in the standalone paper or supplement unless one is essential to P2's argument.
-
-For each candidate figure preserve:
-- source/original date;
-- workflow/application shown;
-- whether the state is historical, public-current, advanced-current, or conceptual/prototype;
-- what claim the figure supports;
-- whether it belongs INLINE / SUPPLEMENT / ALETHIC-ISM PAPER / DUPLICATIVE.
-
-## Standalone systems paper
+## Standalone systems paper — current priority
 
 Provisional title:
 
 > **Alethic-ISM: An Instruction-State-Machine Architecture for Auditable AI Research Workflows**
 
 The scientific object is the architecture itself across multiple workflows, with SACRE as one historically important case rather than the organizing center.
+
+The next substantive Alethic-ISM work should therefore move beyond supplying P2 and build the systems paper around measurable cross-workflow evidence.
 
 Candidate contribution/evaluation areas include:
 
@@ -120,9 +90,9 @@ Candidate contribution/evaluation areas include:
 
 The strongest systems paper will distinguish architecture claims from measurable evidence rather than presenting a catalogue of features.
 
-## Cross-workflow evidence
+## Cross-workflow evidence program
 
-Build a paper-facing evidence inventory across at least several mature workflows:
+Build a paper-facing evidence inventory across several mature workflows:
 
 ```text
 Alethic-ISM architecture
@@ -139,6 +109,15 @@ For every workflow, identify:
 - implemented capabilities actually exercised;
 - available run/scale/provenance evidence;
 - limitations on what can be claimed.
+
+The four high-value figure families already identified for P2 remain useful source material for the standalone paper:
+
+1. instruction/state-machine graph or Studio view;
+2. WTP/synthetic-data or multi-model execution view;
+3. early collective-reflective-equilibrium/SACRE precursor graph;
+4. later SACRE execution architecture in ISM, explicitly labeled by historical/current/prototype status.
+
+For each figure preserve **source/date; workflow; current-vs-historical/prototype status; claim supported; evidence source; intended paper home**.
 
 ## Open-source vs active development
 
@@ -158,11 +137,11 @@ Repository-reported scale figures, including the current >500M-data-point statem
 
 ## Current next actions
 
-1. Inventory/reconcile June 15 and earlier ISM figures against current terminology and technical truth.
-2. Build the cross-workflow evidence table needed for both P2 and the systems paper.
-3. Supply the P2 maximal master with bounded, reader-led ISM material and correctly captioned figures.
-4. Develop the standalone systems paper around the instruction-state-machine contribution and measurable cross-workflow evidence.
-5. Keep P2 self-contained: enough ISM to show what construction taught and what infrastructure was built, without turning P2 into the full systems paper.
+1. Convert the P2-era figure/evidence inventory into the standalone systems-paper evidence table.
+2. Reconcile public-current vs advanced-current implementation claims across each mature workflow.
+3. Identify at least one additional mature non-SACRE workflow beyond synthetic-CV/WTP if the evidence is strong enough.
+4. Draft the standalone systems paper around architecture + measured cross-workflow behavior, not a feature catalogue.
+5. Feed P2 only targeted factual corrections if new systems evidence materially changes a statement already in v49.
 
 ## Handoff format
 
@@ -174,4 +153,4 @@ For figures, include **source/date; claim supported; truth-status; intended home
 
 ## Reference
 
-Ghose, S., Rasaee, K., Singer, P., & Savulescu, J. (2026a). *Doing ethics with AI: Practical ethics engineering, product-led philosophy, & computer-aided ethics.* Manuscript in preparation.
+Ghose, S., Singer, P., & Savulescu, J. (2026a). *Doing ethics with AI: Practical ethics engineering, product-led philosophy, & computer-aided ethics.* Manuscript in preparation.
