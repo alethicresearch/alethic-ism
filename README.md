@@ -20,7 +20,7 @@ The application domains demonstrate generality; they are not the purpose of the 
 
 *Structurally Analyzed Collective Reflective Equilibrium · evolved from CREP*
 
-Computes the most coherently justified policy for a scenario by reconciling **public preferences, expert judgment, and ethical frameworks**.
+Computes pairwise normative convergence across represented **public preferences, expert judgment, and ethical frameworks**, aggregates those relations into candidate coherence profiles, and returns the highest-ranked candidate as a provisional Final Policy under the declared SACRE procedure.
 
 </td>
 <td width="50%" valign="top">
@@ -219,4 +219,3 @@ Alethic ISM is under a DUAL licensing model, please refer to [LICENSE.md](docs/L
 
 **Commercial License**
   Intended for commercial use, including production deployments and proprietary applications. This license allows for closed-source derivative works and commercial distribution. Please contact us for more information.
-</content>
